@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+body{
+    height: 100vh;
+    font-family: "outfit";
+    /* font-size: 18px; */
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card{
+    background-color: var(--card-bg);
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+img.equilibrium{
+    width: 100%;
+    border-radius: 15px;
+}
+
+h3{
+    color: var(--white);
+    margin: 15px 0;
+}
+
+h3:hover{
+    color: var(--cyan);
+}
+
+p.text{
+    color: var(--soft-blue);
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+div.details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.amount p{
+    color: var(--cyan);
+}
+
+div.amount, div.days{
+    display: flex;
+}
+
+img.ethereum, img.clock{
+    padding-right: 10px;
+}
+
+hr{
+    background-color: var(--line);
+    margin-bottom: 20px;
+    border: none;
+    height: 1.5px;
+}
+
+div.jules{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img.jules{
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+div.jules p{
+    font-size: 14px;
+}
+
+div.jules p span{
+    color: var(--soft-blue);
+}
+   
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
